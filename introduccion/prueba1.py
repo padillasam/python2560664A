@@ -1,7 +1,3 @@
-from re import U
-from socketserver import UDPServer
-
-
 user=input('Aprendizaje de python, cual es su nombre\n')
 print('bienvenido ',user)
 lang=input('Favorite programming language')
