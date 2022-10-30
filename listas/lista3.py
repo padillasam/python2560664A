@@ -1,6 +1,6 @@
 import random
 tam=20
-vec=[1,2,3,4,12,23,34,1,2,5]
+vec=[10,2,3,4,10,23,34,10,2,5]
 vecCant=[]
 #for i in range(tam):
  #   vec.append(round(random.random()*100))
