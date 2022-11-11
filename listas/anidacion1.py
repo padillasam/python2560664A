@@ -4,6 +4,6 @@ lista=[[1,2,3],
 print(lista[1][1])
 for i in range(3):
     for j in range(3):
-       print(lista[i][j],end='-') 
+       print(lista[i][j],end=' ') 
        #lista.append()
 #print(lista)
