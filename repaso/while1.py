@@ -5,6 +5,9 @@ def progresionNumerica():
     while num1<num2:
         num1=num2
         num2=int(input('ingrese numero')) 
+        if num2%2!=0:
+            print('Error')
+            break
         cont+=1     
     print('Cantidad de numeros ingresada ',cont)
 
