@@ -1,8 +1,8 @@
 from sys import path
 
-path.append('C:\\Users\\usuario\\Dropbox\\sena2022\\Trimestre4-06octubre-17diciembre\\MiPracticaPythonA\\modulos')
+#path.append('C:\\Users\\usuario\\Dropbox\\sena2022\\Trimestre4-06octubre-17diciembre\\MiPracticaPythonA\\modulos')
 
-#path.append('..\\MiPracticaPythonA\\modulos')
+path.append('..\\MiPracticaPythonA\\modulos')
 import modulo1
 from modulo1 import suml,prodl
 
