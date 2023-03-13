@@ -12,7 +12,9 @@ with open('C:\\Users\\usuario\\Documents\\01-SENA\\NetAcademy2023\\2693629.csv')
         # print('last name:',row[1])
         # print('email:',row[2])
         # print('id:',row[3])
-print(listaAprendices)
-for aprendiz in listaAprendices:
-    print(aprendiz.nombreCompleto())
-print(listaAprendices[10])
+
+print(listaAprendices.nombreCompleto())
+# for aprendiz in listaAprendices.sort():
+#     print(aprendiz.nombreCompleto())
+#print(listaAprendices[10])
+
