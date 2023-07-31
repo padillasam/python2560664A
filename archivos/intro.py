@@ -1,4 +1,4 @@
-flujo=open('archivos/inicio.txt','a+')
+flujo=open('archivos/inicio1.txt','a+')
 #r+ hace update y lee
 #a+ hace update pero no lee
 #datos=flujo.read()

@@ -28,3 +28,5 @@ if __name__ == "__main__":
     my_list = [i+1 for i in range(5)]
     print(suml(my_list) == 15)
     print(prodl(my_list) == 120)
+
+print(f'variable __name__ ... {__name__}')
