@@ -1,20 +1,3 @@
-def decoradora(funcion):
-    print('inicia función decoradora')
-    def acondicionamiento():
-        #print(funcion())
-        return f'trotar y estirar {funcion()}'
-
-    return acondicionamiento
-
-def tapar():
-    return 'tapando'
-    #print('tapando')
-
-#arquero=decoradora(tapar)
-#print(arquero())
-
-@decoradora
-def patear():
-    return 'pateando'
-
-print(patear())
+decimal = 42.7 
+entero = 42 
+print ('%d %i %g %i' % (decimal, decimal, decimal, entero)) 

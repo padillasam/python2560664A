@@ -85,3 +85,13 @@ print("Resultado de la división:", resultado_division)
 # # 		print(f'{clave}: {valor}') #imprime la clave y valor en la consola 
 # # imprimir_datos(nombre = "Nicolas", edad=19, ciudad="Bogota") #llamamos la funcion imprmir_datos con argumentos kargs
 # # # el bucle for iterara a traves de los elemtos del diccionario.
+
+#%s : Para hacer referencia a un string o conservar el mismo formato.
+#%d : Para truncar a entero.
+#%i : Para hacer referencia a un entero.
+#%f : Para hacer referencia a flotante.
+#%g : Para hacer referencia a genérico.
+
+decimal = 42.7 
+entero = 42 
+print ('%d %i %g %i' % (decimal, decimal, decimal, entero)) 
