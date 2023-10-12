@@ -29,4 +29,4 @@ operacion = crear_calculadora(5,10)
 # multiplicar = crear_calculadora(5,10)
 # dividir = crear_calculadora(5,10)
 
-print(operacion('+','*'))
+print(operacion('/','*','-','+'))
