@@ -8,10 +8,11 @@ rta=response.json()
 # print(rta['data'][0]['name'])
 # lista=[state for state in rta['data'][0]['name']]
 # print(lista)
-i=0
-for key in rta.keys():
-    print(rta['data'][i]['name'])
-    i=i+1
+i=-1
+for key in rta.keys():    
+    #print(rta['data'][i]['name'])
+    print(type(rta['data'][0]))
+    print(rta['data'][1])
 
 
 
@@ -23,3 +24,6 @@ for key in rta.keys():
 #                  print(clave)   
 
 
+for i in range (len(rta['data'])):
+    #print(type(rta['data'][i]['name']))
+    print(rta['data'][i]['name'])
