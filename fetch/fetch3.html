@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Random User</title>
+</head>
+<body>
+    <h1>Usuarios Aleatorios</h1>
+    <ul id="user-list"></ul>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const apiURL = "http://localhost:8000/usuario/aprendices/";
+
+            fetch(apiURL)
+                .then(response => response.json())
+                .then(data => {
+                    // Manipular los datos obtenidos de la API
+                    const userList = document.getElementById('user-list');
+
+                    data.forEach(user => {
+                        const listItem = document.createElement('li');
+                        const img = document.createElement("img");
+                        img.src = user.photo;
+                        listItem.textContent = `${user.name} ${user.sureName}`;
+                        userList.appendChild(listItem);
+                        userList.appendChild(img);
+                    });
+                })
+                .catch(error => {
+                    console.error('Error al obtener datos de la API:', error);
+                });
+        });
+    </script>
+</body>
+</html>

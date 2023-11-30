@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Authors</h1>
+    <ul id="authors"></ul>
+
+    <script>
+      function createNode(element) {
+        return document.createElement(element);
+      }
+
+      function append(parent, el) {
+        return parent.appendChild(el);
+      }
+
+      const ul = document.getElementById("authors");
+      const url = "http://localhost:8000/usuario/aprendices/";
+
+      fetch(url)
+        .then((resp) => resp.json())
+        .then(function (data) {
+          //let authors = data.results;
+          let authors = data;
+          return authors.map(function (author) {
+            let li = createNode("li");
+            let img = createNode("img");
+            let span = createNode("span");
+            img.src = author.photo;
+            span.innerHTML = `${author.name} ${author.documento}`;
+            append(li, img);
+            append(li, span);
+            append(ul, li);
+          });
+        })
+        .catch(function (error) {
+          console.log(error);
+        });
+
+      //   fetch("http://localhost:8000/usuario/aprendices/", {
+      //     method: "GET",
+      //     headers: { "Content-type": "application/json;charset=UTF-8" },
+      //   })
+      //     .then((response) => response.json())
+      //     .then((json) => console.log(json))
+      //     .catch((err) => console.log(err));
+    </script>
+  </body>
+</html>
